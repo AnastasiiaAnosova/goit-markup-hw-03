@@ -159,6 +159,7 @@ img {
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
 }
 
@@ -184,20 +185,13 @@ img {
     padding: 120px 0;
 }
 
-.company-container {
-    width: 1128px;
-    height: 104px;
-}
-
 .about-company {
     display: flex;
-    align-items: center;
+    gap: 24px;
 }
 
 .about-company-item {
-    margin-right: 24px;
-    width: 264px;
-    height: 104px;
+    flex-basis: calc(( 100% - 3 * 24px ) / 4 );
 }
 
 .about-company-title {
@@ -215,6 +209,10 @@ img {
     color: var(--body-text);
 }
 
+.specialization-company {
+    padding-bottom: 120px;
+}
+
 .specialization {
     font-size: 36px;
     line-height: 1.11;
@@ -227,7 +225,6 @@ img {
 .specialization-list {
     display: flex;
     align-items: center;
-    padding-bottom: 120px;
     flex-wrap: wrap;
     gap: 24px;
 }
@@ -248,7 +245,6 @@ img {
 
 .team-list {
     display: flex;
-    align-items: center;
     gap: 24px;
     flex-basis: calc((100% - 72) / 4 );
 }
@@ -288,16 +284,16 @@ img {
 
 .logo-footer {
     color: var(--light);
-    margin-bottom: 16px;
+    margin-right: 0;
 }
 
 .footer-text {
     width: 264px;
-    height: 110px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent);
+    margin-top: 16px;
 }
 
 .main-portfolio {
@@ -331,7 +327,7 @@ img {
     color: #FFFFFF;
     background: var(--pressed-state);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    border-color: transparent;
 }
 
 .filter-list {
